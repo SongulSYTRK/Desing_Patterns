@@ -46,15 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Builder\Abstract Builder\PizzaBuilder.cs" />
-    <Compile Include="Builder\Abstract Builder\Product_Pizza.cs" />
-    <Compile Include="Builder\Concrete Builder\DominosPizza.cs" />
-    <Compile Include="Builder\Concrete Builder\VegetarianPizza.cs" />
-    <Compile Include="Builder\Director\Director_Customer.cs" />
-    <Compile Include="Builder\Product_Client.cs">
+    <Compile Include="Builder\Builder_Example1\Abstract Builder\PizzaBuilder.cs" />
+    <Compile Include="Builder\Builder_Example1\Abstract Builder\Product_Pizza.cs" />
+    <Compile Include="Builder\Builder_Example1\Concrete Builder\DominosPizza.cs" />
+    <Compile Include="Builder\Builder_Example1\Concrete Builder\VegetarianPizza.cs" />
+    <Compile Include="Builder\Builder_Example1\Director\Director_Customer.cs" />
+    <Compile Include="Builder\Builder_Example1\Product_Client.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Builder\Product_Client.Designer.cs">
+    <Compile Include="Builder\Builder_Example1\Product_Client.Designer.cs">
       <DependentUpon>Product_Client.cs</DependentUpon>
     </Compile>
     <Compile Include="Factory\Factory_Example1\Concrete\Dell.cs" />
@@ -78,7 +78,7 @@
     <Compile Include="Singleton\SingletonExample_1\SingletonApp.Designer.cs">
       <DependentUpon>SingletonApp.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Builder\Product_Client.resx">
+    <EmbeddedResource Include="Builder\Builder_Example1\Product_Client.resx">
       <DependentUpon>Product_Client.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Factory\Factory_Example1\CreateComputor.resx">

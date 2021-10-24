@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B4ED03DC-C90B-4914-ABF4-7B20F307F79E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Behavioral_Pattern</RootNamespace>
+    <AssemblyName>Behavioral_Pattern</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chain of Responsibility\CoR_Example1\Abstract\BaseEmployee.cs" />
+    <Compile Include="Chain of Responsibility\CoR_Example1\Abstract\WithDraw.cs" />
+    <Compile Include="Chain of Responsibility\CoR_Example1\Concrete\Cashier.cs" />
+    <Compile Include="Chain of Responsibility\CoR_Example1\Concrete\Manager.cs" />
+    <Compile Include="Chain of Responsibility\CoR_Example1\Concrete\Supervisor.cs" />
+    <Compile Include="Chain of Responsibility\CoR_Example1\WithdrawForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chain of Responsibility\CoR_Example1\WithdrawForm.Designer.cs">
+      <DependentUpon>WithdrawForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mediator\MediatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mediator\MediatorForm.Designer.cs">
+      <DependentUpon>MediatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mediator\Mediator_Example1\Abstrcat\BaseFarmers.cs" />
+    <Compile Include="Mediator\Mediator_Example1\Abstrcat\BaseWholesaler.cs" />
+    <Compile Include="Mediator\Mediator_Example1\Concrete\MediatorPerson.cs" />
+    <Compile Include="Mediator\Mediator_Example1\Concrete\TomatoFarmer.cs" />
+    <Compile Include="Mediator\Mediator_Example1\Concrete\TomatoWholesaler.cs" />
+    <Compile Include="Mediator\Mediator_Example1\Enums\Vegetable.cs" />
+    <Compile Include="Mediator\Mediator_Example1\InterfaceMediator\IMediator.cs" />
+    <Compile Include="Observer\Observer_Example1\Concrete\FatherObserver.cs" />
+    <Compile Include="Observer\Observer_Example1\Concrete\MotherObserver.cs" />
+    <Compile Include="Observer\Observer_Example1\Concrete\Student\StudentObserverable.cs" />
+    <Compile Include="Observer\Observer_Example1\Interface\IObserver.cs" />
+    <Compile Include="Observer\Observer_Example1\ObserverForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Observer\Observer_Example1\ObserverForm.Designer.cs">
+      <DependentUpon>ObserverForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Chain of Responsibility\CoR_Example1\WithdrawForm.resx">
+      <DependentUpon>WithdrawForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mediator\MediatorForm.resx">
+      <DependentUpon>MediatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Observer\Observer_Example1\ObserverForm.resx">
+      <DependentUpon>ObserverForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Observer\Observer_Example1\Abstract\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

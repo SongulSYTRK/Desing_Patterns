@@ -1,1 +1,1 @@
-# Adapter Design Pattern
+

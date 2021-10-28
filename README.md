@@ -3,7 +3,6 @@
 ## Type of Design Pattern
 # 1- [Creational Design Pattern](https://github.com/SongulSYTRK/Desing_Patterns/tree/master/Creational_Pattern)
 # 2- [Structural Design Pattern](https://github.com/SongulSYTRK/Desing_Patterns/tree/master/Structural_Patterns)
-
-
+# 3- [Behavioral Design Pattern](https://github.com/SongulSYTRK/Desing_Patterns/tree/master/Behavioral_Pattern)
 
 ![image](https://user-images.githubusercontent.com/90280719/138466167-60fece96-8aff-4528-ab68-ac582fe2c2b6.png)

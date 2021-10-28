@@ -1,6 +1,8 @@
 ﻿using Creational_Pattern.Builder;
 using Creational_Pattern.Factory.Factory_Example1;
+using Creational_Pattern.Factory.Factory_Example2;
 using Creational_Pattern.Singleton;
+using Creational_Pattern.Singleton.SingletonExample_2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +21,7 @@ namespace Creational_Pattern
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new btn());
+            Application.Run(new Furniture());
         }
     }
 }

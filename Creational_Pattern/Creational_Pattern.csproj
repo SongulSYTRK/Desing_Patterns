@@ -69,6 +69,19 @@
     <Compile Include="Factory\Factory_Example1\Enums\ComputerModel.cs" />
     <Compile Include="Factory\Factory_Example1\FactoryCreater\Creator.cs" />
     <Compile Include="Factory\Factory_Example1\Interface\IComputer.cs" />
+    <Compile Include="Factory\Factory_Example2\Abstract\BaseFurniture.cs" />
+    <Compile Include="Factory\Factory_Example2\Concrete\Bakery.cs" />
+    <Compile Include="Factory\Factory_Example2\Concrete\Chair.cs" />
+    <Compile Include="Factory\Factory_Example2\Concrete\Seat.cs" />
+    <Compile Include="Factory\Factory_Example2\Decorator\Abstract\BaseFurnitureDecorator.cs" />
+    <Compile Include="Factory\Factory_Example2\Decorator\Concrete\AddColor.cs" />
+    <Compile Include="Factory\Factory_Example2\Factory\FactoryFurniture.cs" />
+    <Compile Include="Factory\Factory_Example2\Furniture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Factory\Factory_Example2\Furniture.Designer.cs">
+      <DependentUpon>Furniture.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Singleton\SingletonExample_1\Singletonn.cs" />
@@ -78,11 +91,21 @@
     <Compile Include="Singleton\SingletonExample_1\SingletonApp.Designer.cs">
       <DependentUpon>SingletonApp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Singleton\SingletonExample_2\CreateSingleton.cs" />
+    <Compile Include="Singleton\SingletonExample_2\SingletonProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Singleton\SingletonExample_2\SingletonProperty.Designer.cs">
+      <DependentUpon>SingletonProperty.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Builder\Builder_Example1\Product_Client.resx">
       <DependentUpon>Product_Client.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Factory\Factory_Example1\CreateComputor.resx">
       <DependentUpon>CreateComputor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Factory\Factory_Example2\Furniture.resx">
+      <DependentUpon>Furniture.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -95,6 +118,9 @@
     </Compile>
     <EmbeddedResource Include="Singleton\SingletonExample_1\SingletonApp.resx">
       <DependentUpon>SingletonApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Singleton\SingletonExample_2\SingletonProperty.resx">
+      <DependentUpon>SingletonProperty.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

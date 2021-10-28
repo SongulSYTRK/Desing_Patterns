@@ -21,7 +21,8 @@ namespace Creational_Patterns.Singleton
         private static Singletonn singleton = new Singletonn();  // Değişkenimizi de static olarak işaretledik 
 
 
-        // (1. YAZIM)  public Singleton getSingleton() => singleton; // kendi içinde oluşturduğumuz nesneyi dışarı açık hale getirdik
+        // (1. YAZIM)  public Singleton getSingleton() => singleton; // kendi içinde oluşturduğumuz nesneyi dışarı açık hale getirdik. 
+        // nesneye method üzerinden eriştik
         public  static Singletonn getSingleton() => singleton;
 
         //Bir nesneyi newlemeden o methodu kullanamanın yolu o methodu STATİC YAPMAKTIR. Static methodlar içerisinde sadece static değişkenler kullanmaya izin verir bu yüzden class içinde ilk anda hata aldık 

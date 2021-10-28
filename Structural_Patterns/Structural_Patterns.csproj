@@ -85,6 +85,17 @@
     <Compile Include="Decorator\Decorator_Example1\DecoratorConcrete\MilkCoffee.cs" />
     <Compile Include="Decorator\Decorator_Example1\Enums\CoffeeSize.cs" />
     <Compile Include="Decorator\Decorator_Example1\Interface\ICoffee.cs" />
+    <Compile Include="Decorator\Decorator_Example2\Business\Abstract\BaseDecoratorStudent.cs" />
+    <Compile Include="Decorator\Decorator_Example2\Business\Concrete\StudentDecorator.cs" />
+    <Compile Include="Decorator\Decorator_Example2\DecoratorStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Decorator\Decorator_Example2\DecoratorStudent.Designer.cs">
+      <DependentUpon>DecoratorStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Decorator\Decorator_Example2\Model\Abstract\BaseStudent.cs" />
+    <Compile Include="Decorator\Decorator_Example2\Model\Concrete\FirstStudent.cs" />
+    <Compile Include="Decorator\Decorator_Example2\Model\Concrete\GaziStudent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Adapter\ErrorForm.resx">
@@ -95,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Decorator\Decorator_Example1\CoffeeForm.resx">
       <DependentUpon>CoffeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Decorator\Decorator_Example2\DecoratorStudent.resx">
+      <DependentUpon>DecoratorStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

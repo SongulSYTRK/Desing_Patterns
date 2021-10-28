@@ -1,6 +1,7 @@
 ﻿using Structural_Patterns.Adapter;
 using Structural_Patterns.Bridge.Bridge_Example1;
 using Structural_Patterns.Decorator.Decorator_Example1;
+using Structural_Patterns.Decorator.Decorator_Example2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace Structural_Patterns
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AppUserForm());
+            Application.Run(new DecoratorStudent());
         }
     }
 }

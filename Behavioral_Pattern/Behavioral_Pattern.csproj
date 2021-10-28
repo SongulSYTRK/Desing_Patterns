@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chain of Responsibility\CoR_Example1\Abstract\BaseEmployee.cs" />
-    <Compile Include="Chain of Responsibility\CoR_Example1\Abstract\WithDraw.cs" />
+    <Compile Include="Chain of Responsibility\CoR_Example1\Model\WithDraw.cs" />
     <Compile Include="Chain of Responsibility\CoR_Example1\Concrete\Cashier.cs" />
     <Compile Include="Chain of Responsibility\CoR_Example1\Concrete\Manager.cs" />
     <Compile Include="Chain of Responsibility\CoR_Example1\Concrete\Supervisor.cs" />

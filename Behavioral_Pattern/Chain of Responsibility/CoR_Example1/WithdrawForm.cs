@@ -26,6 +26,8 @@ namespace Behavioral_Pattern.Chain_of_Responsibility.CoR_Example1
             BaseEmployee cashier = new Cashier();
             BaseEmployee manager = new Manager();
             BaseEmployee supervisor = new Supervisor();
+
+
             cashier.SetNextApprover(supervisor);
             supervisor.SetNextApprover(manager);
 

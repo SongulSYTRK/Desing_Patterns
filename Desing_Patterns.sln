@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural_Patterns", "Stru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Behavioral_Pattern", "Behavioral_Pattern\Behavioral_Pattern.csproj", "{B4ED03DC-C90B-4914-ABF4-7B20F307F79E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoR_Hospital", "CoR_Hospital\CoR_Hospital.csproj", "{BADBC96B-121A-42F0-AFB4-B9315B3B724D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B4ED03DC-C90B-4914-ABF4-7B20F307F79E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4ED03DC-C90B-4914-ABF4-7B20F307F79E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4ED03DC-C90B-4914-ABF4-7B20F307F79E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BADBC96B-121A-42F0-AFB4-B9315B3B724D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BADBC96B-121A-42F0-AFB4-B9315B3B724D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BADBC96B-121A-42F0-AFB4-B9315B3B724D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BADBC96B-121A-42F0-AFB4-B9315B3B724D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

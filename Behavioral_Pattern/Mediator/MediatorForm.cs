@@ -22,13 +22,13 @@ namespace Behavioral_Pattern.Mediator
         
         private void btnTomota_Click(object sender, EventArgs e)
         {
-         TomatoFarmer FarmerAli=   new TomatoFarmer(Name = "Ali",  unitPrice=5 , mediator);
-         TomatoFarmer FarmerMehmet = new TomatoFarmer(Name = "Ali", unitPrice =6 , mediator);
+            TomatoFarmer FarmerAli = new TomatoFarmer(Name = "Ali", unitPrice = 5, mediator);
+            TomatoFarmer FarmerMehmet = new TomatoFarmer(Name = "Ali", unitPrice = 6, mediator);
             mediator.FarmerAdd(FarmerAli);
             mediator.FarmerAdd(FarmerMehmet);
 
-        TomatoWholesaler WholeSalerAhmet = new TomatoWholesaler(Name = "Ahmet", UnitPrice = 5, mediator);
-        TomatoWholesaler WholeSalerKamil = new TomatoWholesaler(Name = "kamil", UnitPrice = 6, mediator);
+            TomatoWholesaler WholeSalerAhmet = new TomatoWholesaler(Name = "Ahmet", UnitPrice = 5, mediator);
+            TomatoWholesaler WholeSalerKamil = new TomatoWholesaler(Name = "kamil", UnitPrice = 6, mediator);
             mediator.WholesalerAdd(WholeSalerAhmet);
             mediator.WholesalerAdd(WholeSalerKamil);
 

@@ -5,3 +5,7 @@
 ## <br> 1-[Adapter](https://github.com/SongulSYTRK/Desing_Patterns/tree/master/Structural_Patterns/Adapter)
 ## <br> 2-[Decorator](https://github.com/SongulSYTRK/Desing_Patterns/tree/master/Structural_Patterns/Decorator/Decorator_Example1)
 ## <br> 3-[Bridge](https://github.com/SongulSYTRK/Desing_Patterns/tree/master/Structural_Patterns/Bridge/Bridge_Example1)
+## <br> 4-Composite 
+## <br> 5-Facade 
+## <br> 6-Flyweight 
+## <br> 7-Proxy 

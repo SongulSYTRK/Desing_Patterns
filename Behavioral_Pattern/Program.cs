@@ -1,5 +1,8 @@
-﻿using Behavioral_Pattern.Chain_of_Responsibility.CoR_Example1;
-using Behavioral_Pattern.Observer.Observer_Example1;
+﻿using Behavioral_Pattern.Chain_of_Responsibility.CoR_Example_2;
+using Behavioral_Pattern.Chain_of_Responsibility.CoR_Example1;
+using Behavioral_Pattern.Mediator;
+using Behavioral_Pattern.Mediator.Mediator_Example2;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +21,7 @@ namespace Behavioral_Pattern
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ObserverForm());
+            Application.Run(new Mediator2Form());
         }
     }
 }

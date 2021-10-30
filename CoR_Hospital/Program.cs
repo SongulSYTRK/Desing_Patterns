@@ -41,7 +41,7 @@ namespace CoR_Hospital
              Console.WriteLine("ödeme bekliyor");
             foreach (var item in sickBills)
             {
-                bankCartHandler.SetHandler(item.);
+                bankCartHandler.SetHandler(item);
             }
 
 

@@ -46,6 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chain of Responsibility\CoR_Example-2\Abstract\Player.cs" />
+    <Compile Include="Chain of Responsibility\CoR_Example-2\Concrete\AviPlayer.cs" />
+    <Compile Include="Chain of Responsibility\CoR_Example-2\Concrete\MP3Player.cs" />
+    <Compile Include="Chain of Responsibility\CoR_Example-2\Concrete\MP4Player.cs" />
+    <Compile Include="Chain of Responsibility\CoR_Example-2\CorExample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chain of Responsibility\CoR_Example-2\CorExample.Designer.cs">
+      <DependentUpon>CorExample.cs</DependentUpon>
+    </Compile>
     <Compile Include="Chain of Responsibility\CoR_Example1\Abstract\BaseEmployee.cs" />
     <Compile Include="Chain of Responsibility\CoR_Example1\Model\WithDraw.cs" />
     <Compile Include="Chain of Responsibility\CoR_Example1\Concrete\Cashier.cs" />
@@ -57,10 +67,10 @@
     <Compile Include="Chain of Responsibility\CoR_Example1\WithdrawForm.Designer.cs">
       <DependentUpon>WithdrawForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mediator\MediatorForm.cs">
+    <Compile Include="Mediator\Mediator_Example1\MediatorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Mediator\MediatorForm.Designer.cs">
+    <Compile Include="Mediator\Mediator_Example1\MediatorForm.Designer.cs">
       <DependentUpon>MediatorForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Mediator\Mediator_Example1\Abstrcat\BaseFarmers.cs" />
@@ -70,6 +80,17 @@
     <Compile Include="Mediator\Mediator_Example1\Concrete\TomatoWholesaler.cs" />
     <Compile Include="Mediator\Mediator_Example1\Enums\Vegetable.cs" />
     <Compile Include="Mediator\Mediator_Example1\InterfaceMediator\IMediator.cs" />
+    <Compile Include="Mediator\Mediator_Example2\Business\Abstract\BaseChatUser.cs" />
+    <Compile Include="Mediator\Mediator_Example2\Business\Concrete\ChatUser1.cs" />
+    <Compile Include="Mediator\Mediator_Example2\Business\Concrete\ChatUser2.cs" />
+    <Compile Include="Mediator\Mediator_Example2\Mediator2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mediator\Mediator_Example2\Mediator2Form.Designer.cs">
+      <DependentUpon>Mediator2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mediator\Mediator_Example2\Mediator\Abstract\BaseMediator.cs" />
+    <Compile Include="Mediator\Mediator_Example2\Mediator\Concrete\ConcreteMediator.cs" />
     <Compile Include="Observer\Observer_Example1\Concrete\FatherObserver.cs" />
     <Compile Include="Observer\Observer_Example1\Concrete\MotherObserver.cs" />
     <Compile Include="Observer\Observer_Example1\Concrete\Student\StudentObserverable.cs" />
@@ -82,11 +103,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Chain of Responsibility\CoR_Example-2\CorExample.resx">
+      <DependentUpon>CorExample.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Chain of Responsibility\CoR_Example1\WithdrawForm.resx">
       <DependentUpon>WithdrawForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mediator\MediatorForm.resx">
+    <EmbeddedResource Include="Mediator\Mediator_Example1\MediatorForm.resx">
       <DependentUpon>MediatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mediator\Mediator_Example2\Mediator2Form.resx">
+      <DependentUpon>Mediator2Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Observer\Observer_Example1\ObserverForm.resx">
       <DependentUpon>ObserverForm.cs</DependentUpon>

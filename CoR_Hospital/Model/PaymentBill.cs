@@ -8,6 +8,7 @@ namespace CoR_Hospital.Model
     public class PaymentBill
     {
         public decimal amount { get; set; }
+        public decimal Amount { get; internal set; }
         public PaymentInformation paymentInformation { get; set; }
     }
 }

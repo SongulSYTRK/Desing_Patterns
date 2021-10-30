@@ -46,17 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adapter\Concrete\DbError.cs" />
-    <Compile Include="Adapter\Concrete\Fax.cs" />
-    <Compile Include="Adapter\Concrete\FaxAdapter.cs" />
-    <Compile Include="Adapter\Concrete\TechnicalError.cs" />
-    <Compile Include="Adapter\ErrorForm.cs">
+    <Compile Include="Adapter\Adapter_Example2\Concrete\DbError.cs" />
+    <Compile Include="Adapter\Adapter_Example2\Concrete\Fax.cs" />
+    <Compile Include="Adapter\Adapter_Example2\Concrete\FaxAdapter.cs" />
+    <Compile Include="Adapter\Adapter_Example2\Concrete\TechnicalError.cs" />
+    <Compile Include="Adapter\Adapter_Example2\ErrorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Adapter\ErrorForm.Designer.cs">
+    <Compile Include="Adapter\Adapter_Example2\ErrorForm.Designer.cs">
       <DependentUpon>ErrorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Adapter\Interface\IError.cs" />
+    <Compile Include="Adapter\Adapter_Example2\Interface\IError.cs" />
     <Compile Include="Bridge\Bridge_Example1\Abstract\Device.cs" />
     <Compile Include="Bridge\Bridge_Example1\AppUserForm.cs">
       <SubType>Form</SubType>
@@ -98,7 +98,7 @@
     <Compile Include="Decorator\Decorator_Example2\Model\Concrete\GaziStudent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Adapter\ErrorForm.resx">
+    <EmbeddedResource Include="Adapter\Adapter_Example2\ErrorForm.resx">
       <DependentUpon>ErrorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Bridge\Bridge_Example1\AppUserForm.resx">
@@ -132,6 +132,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Adapter\Adapter_Example1\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
